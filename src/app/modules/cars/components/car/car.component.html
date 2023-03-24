@@ -1,0 +1,35 @@
+<div class="wrapper" *ngIf="car">
+  <div class="section-1">
+    <div class="car-name">{{ car.name }}</div>
+  </div>
+  <div class="section-2">
+    <div class="car-image">
+      <img [src]="car.image" />
+    </div>
+  </div>
+  <div class="section-3">
+    <div class="range">
+      <div class="range-1">{{ car.range1 }}</div>
+      <div class="range-2">{{ car.range2 }}</div>
+    </div>
+    <div class="divider"></div>
+    <div class="motor">
+      <div class="motor-1">{{ car.motor1 }}</div>
+      <div class="motor-2">{{ car.motor2 }}</div>
+    </div>
+  </div>
+
+  <div class="section-4">
+    <div class="label">Acceleration:</div>
+    <div class="value">{{ car.acceleration }}</div>
+  </div>
+
+  <div class="section-5">
+    <div class="label">Top Speed:</div>
+    <div class="value">{{ car.topSpeed }}</div>
+  </div>
+
+  <div class="section-6">
+    <button class="order-now">Order Now</button>
+  </div>
+</div>
