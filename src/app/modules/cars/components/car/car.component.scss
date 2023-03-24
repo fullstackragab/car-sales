@@ -10,104 +10,163 @@
     align-items: center;
     font-size: 38px;
     padding-top: 226px;
-  }
-  .section-2 {
-    width: 100%;
-    .car-image {
-      width: 100%;
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+    @media (min-width: 721px) {
+      padding-top: 120px;
+      padding-bottom: 60px;
     }
   }
-  .section-3 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr;
-    padding: 20px;
-    .range {
+  .mobile {
+    @media (min-width: 721px) {
+      display: none;
+    }
+    .section-2 {
       width: 100%;
-      flex-direction: column;
+      .car-image {
+        width: 100%;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .section-3 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      padding: 20px;
+      .range {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .range-1 {
+          font-size: 26px;
+        }
+        .range-2 {
+          margin-top: 6px;
+          font-size: 10px;
+          font-weight: 300;
+        }
+      }
+      .motor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .motor-1 {
+          font-size: 26px;
+        }
+        .motor-2 {
+          margin-top: 6px;
+          font-size: 10px;
+          font-weight: 300;
+        }
+      }
+      .divider {
+        width: 1px;
+        background-color: white;
+        height: 57px;
+        opacity: 0.6;
+      }
+    }
+    .section-4 {
+      display: flex;
+      width: 100%;
       justify-content: center;
       align-items: center;
-      display: flex;
-      .range-1 {
-        font-size: 26px;
-      }
-      .range-2 {
-        margin-top: 6px;
-        font-size: 10px;
+      font-size: 16px;
+      margin-top: 56px;
+      .label {
         font-weight: 300;
+        opacity: 0.8;
+        margin-right: 6px;
       }
     }
-    .motor {
-      width: 100%;
+    .section-5 {
       display: flex;
-      flex-direction: column;
+      width: 100%;
       justify-content: center;
       align-items: center;
-      .motor-1 {
-        font-size: 26px;
-      }
-      .motor-2 {
-        margin-top: 6px;
-        font-size: 10px;
+      font-size: 16px;
+      margin-top: 16px;
+      .label {
         font-weight: 300;
+        opacity: 0.8;
+        margin-right: 6px;
       }
     }
-    .divider {
-      width: 1px;
-      background-color: white;
-      height: 57px;
-      opacity: 0.6;
-    }
-  }
-  .section-4 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    margin-top: 56px;
-    .label {
-      font-weight: 300;
-      opacity: 0.8;
-      margin-right: 6px;
-    }
-  }
-  .section-5 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    margin-top: 16px;
-    .label {
-      font-weight: 300;
-      opacity: 0.8;
-      margin-right: 6px;
-    }
-  }
 
-  .section-6 {
-    width: 100%;
-    margin-top: 68px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    button.order-now {
-      text-transform: uppercase;
-      height: 64px;
-      background-color: black;
-      border-radius: 100px;
-      color: white;
-      width: 300px;
-      border: 1px solid red;
-      font-size: 20px;
-      outline: none;
+    .section-6 {
+      width: 100%;
+      margin-top: 68px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      button.order-now {
+        text-transform: uppercase;
+        height: 64px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        width: 300px;
+        border: 1px solid red;
+        font-size: 20px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .large {
+    display: none;
+
+    @media (min-width: 721px) {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+    }
+
+    .section-8 {
+      margin-top: 30px;
+
+      .line {
+        display: flex;
+        margin-bottom: 20px;
+        .label {
+          font-weight: 300;
+          opacity: 0.8;
+          margin-right: 6px;
+        }
+        .value {
+          display: flex;
+          .range-2 {
+            font-size: 12px;
+            line-height: 20px;
+            margin-left: 6px;
+          }
+          .motor-2 {
+            font-size: 12px;
+            line-height: 20px;
+            margin-left: 6px;
+          }
+        }
+      }
+
+      button.order-now {
+        margin-top: 60px;
+        text-transform: uppercase;
+        height: 44px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        width: 200px;
+        border: 1px solid red;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+      }
     }
   }
 }
